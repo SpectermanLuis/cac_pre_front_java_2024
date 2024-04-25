@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CACFlix</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/codoacodo.png" class="animate__animated animate__rotateIn" alt="Logo Codo a Codo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#peliculas">Lista Películas</a></li>
+                <li><a href="#formulario">Formulario Contacto</a></li>
+                <li><a href="#ubicacion">Ubicacion</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h1>Películas y series ilimitadas y mucho más.</h1>
+            <p>Disfruta donde quieras. Cancela cuando quieras.</p>
+        </section>
+
+
+        <section  id="peliculas" class="tarjetas">
+                <h1>Lista de Peliculas</h1>
+
+            <div class="tarjeta">
+                <img src="assets/peli01.jpg" alt="Imagen 1">
+                <div class="boton-modal">
+                    <label for="btn-modal">
+                        Mas Info
+                    </label>
+                </div>
+
+            </div>
+            <div class="tarjeta">
+                <img src="assets/peli02.jpg" alt="Imagen 2">
+                <div class="boton-modal">
+                    <label for="btn-modal">
+                        Mas Info
+                    </label>
+                </div>
+
+
+            </div>
+
+
+            <div class="tarjeta">
+                <img src="assets/peli03.jpg" alt="Imagen 3">
+                <div class="boton-modal">
+                    <label for="btn-modal">
+                        Mas Info
+                    </label>
+                </div>
+
+                
+            </div>
+
+            
+        </section>
+
+
+        <!--Ventana Modal-->
+        <input type="checkbox" id="btn-modal">
+        <div class="container-modal">
+            <div class="content-modal">
+                <h2>Detalle</h2>
+                <p>Aca irian el detalle de la pelicula , el elenco y hasta un video con el trailer de la pelicula</p>
+                <div class="btn-cerrar">
+                    <label for="btn-modal">Cerrar</label>
+                </div>
+            </div>
+            <label for="btn-modal" class="cerrar-modal"></label>
+        </div>
+        <!--Fin de Ventana Modal-->
+
+
+        <section id="ubicacion" class="ubicacion">
+            <div class="plano">
+                <div class="titulo">
+                    <h1>Donde nos encontras</h1>
+                </div>
+
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.1577078386413!2d-58.37728792488065!3d-34.67596896131649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd22006b1e21%3A0x3928913eccb65d72!2sNetflix%20Argentina!5e0!3m2!1ses!2sar!4v1713239119602!5m2!1ses!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="formulario" class="content">
+
+            <div class="container">
+                <h2>Formulario de Ingreso de Datos</h2>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="genero">Género:</label>
+                        <select id="genero" name="genero">
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion">Domicilio:</label>
+                        <textarea id="direccion" name="direccion" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="suscripcion" name="suscripcion">
+                        <label for="suscripcion">Suscribirse a nuestro boletín informativo</label>
+                    </div>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer>
+
+        <h2>¿Preguntas? Llama al 0800 345 15..</h2>
+        <div class="fila">
+            <div class="columna">
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Relaciones con Inversionistas</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Prueba de velocidad</a>
+
+            </div>
+            <div class="columna">
+                <a href="#">Centro de ayuda</a>
+                <a href="#">Empleo</a>
+                <a href="#">Preferencias de cookies</a>
+                <a href="#">Avisos legales</a>
+            </div>
+            <div class="columna">
+                <a href="#">Cuenta</a>
+                <a href="#">Formas de ver</a>
+                <a href="#">Informacion corporativa</a>
+                <a href="#">Solo en Netflix</a>
+            </div>
+            <div class="columna">
+                <a href="#">Prensa</a>
+                <a href="#">Terminos de Uso</a>
+                <a href="#">Contactanos</a>
+            </div>
+        </div>
+        <p>© 2024 Practica Codo a Codo Netflix Truchex</p>
+
+    </footer>
+
+</body>
+
+</html>
